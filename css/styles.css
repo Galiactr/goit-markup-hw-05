@@ -65,11 +65,11 @@ button {
 	white-space: nowrap;
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
-	overflow: hidden;
+	overflow: hidden;}
 
 /* Шапка */
 
-.header {
+.page-header {
   background-color: var(--wight-text);
   border-bottom: 1px solid #ececec;
   font-weight: 500;
@@ -280,18 +280,26 @@ button {
   margin-top: 0;
   margin-bottom: 50px;
 }
-.work-list {
+.work-list  {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 0;
   display: flex;
 }
-.work-name {
+.work-thumb {
+  position: relative;
+}
+.work-text {
+  position: absolute;
+  bottom: 0;
+  padding: 27px 15px;
+}
+.work-list-item {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-.work-name:not(:nth-child(1n + 3)) {
+.work-list-item:not(:nth-child(1n + 3)) {
   margin-right: 30px;
 }
 /* Наша команда  */
