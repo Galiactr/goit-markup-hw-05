@@ -294,6 +294,17 @@ button {
   position: absolute;
   bottom: 0;
   padding: 27px 15px;
+
+  width: 100%;
+
+  font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-align: center;
+	text-transform: uppercase;
+
+  color: var(--wight-text);
+  background: rgba(47, 48, 58, 0.8);
 }
 .work-list-item {
   margin-bottom: 0;
