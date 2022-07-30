@@ -70,7 +70,7 @@ button {
 
 /* Шапка */
 
-.page-header {
+.header {
   background-color: var(--wight-text);
   border-bottom: 1px solid #ececec;
   font-weight: 500;
