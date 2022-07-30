@@ -139,7 +139,7 @@ button {
   height: 4px;
   border-radius: 2px;
 
-  
+  transform: scaleX(1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--button-color);
 }
@@ -148,6 +148,7 @@ button {
 }
 .nav-list-item .link:hover .nav-list-item.link:focus {
   color: var(--button-color);
+ 
 }
 .contacts-list {
   list-style: none;
@@ -724,6 +725,7 @@ button {
   background-color: rgba(255, 255, 255, 0.1);
 
   transition: var(--transition-bgc);
+
 }
 .icons-social {
   fill: var(--wight-text);
