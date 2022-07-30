@@ -4,7 +4,7 @@
   --text-color: #757575;
   --wight-text: #ffffff;
   --primary-icon-color: #afb1b8;
-  
+
   --transition-bgc: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	--transition-color: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	--transition-border: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -727,4 +727,71 @@ color: var(--button-color);
 .social-link:focus {
    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--button-color);;
+}
+/* МОДАЛКА  */
+
+.backdrop.is-hidden {
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	width: 100vw;
+	height: 100vh;
+
+	opacity: 1;
+	transition: opacity var(--transition-modal), visibility var(--transition-modal);
+
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden .modal {
+	transform: translate(-50%, -50%) scale(0);
+}
+
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(1) rotate(360deg);
+
+	width: 528px;
+	height: 581px;
+
+	transition: transform var(--transition-modal);
+
+	background-color: var(--wight-text);
+}
+
+.close-btn {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 30px;
+	height: 30px;
+
+	cursor: pointer;
+	background-color: transparent;
+	border-radius: 50%;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+
+	transition: var(--transition-color);
+}
+
+.close-btn:hover,
+.close-btn:focus {
+	color: var(--accent-color);
+}
+
+.icon-close {
+	fill: currentColor;
 }
