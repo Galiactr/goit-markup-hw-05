@@ -420,10 +420,13 @@ button {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
+  color: var(--primary-icon-color);
 }
 .icons-social-network {
   display: flex;
-  fill: var(--primary-icon-color);
+  fill: currentColor;
+ 
   
   
   width: 20px;
