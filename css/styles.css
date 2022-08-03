@@ -425,10 +425,8 @@ button {
 }
 .icons-social-network {
   display: flex;
-  fill: currentColor;
- 
-  
-  
+  fill: currentColor; 
+   
   width: 20px;
   height: 20px;
 }
