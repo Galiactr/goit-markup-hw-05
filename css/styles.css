@@ -382,8 +382,7 @@ button {
 }
 .team-div {
   padding: 30px 10px;
-  /* padding-top: 30px;
-  padding-bottom: 30px; */
+  
 }
 .name {
   color: var(--text-title-color);
@@ -410,9 +409,7 @@ button {
   gap: 10px;
 
   }
-/* .social-network-item {
-  transition: var(--transition-bgc), var(--transition-color);
-} */
+
 .social-network-link {
   display: flex;
   justify-content: center;
@@ -427,7 +424,8 @@ button {
 .icons-social-network {
   display: flex;
   fill: var(--primary-icon-color);
-
+  
+  
   width: 20px;
   height: 20px;
 }
