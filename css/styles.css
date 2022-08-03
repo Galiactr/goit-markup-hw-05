@@ -408,14 +408,18 @@ button {
   display: flex;
   justify-content: center;
   gap: 10px;
-}
+
+  }
+/* .social-network-item {
+  transition: var(--transition-bgc), var(--transition-color);
+} */
 .social-network-link {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  
   transition: var(--transition-bgc), var(--transition-color);
-
+  
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -424,7 +428,7 @@ button {
   display: flex;
   fill: var(--primary-icon-color);
 
-  transition: var(--transition-color);
+  /* transition: var(--transition-bgc), var(--transition-color); */
 
   width: 20px;
   height: 20px;
